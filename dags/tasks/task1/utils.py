@@ -33,7 +33,7 @@ def add_week(x, start = 1):
     
     Parameters
     ----------
-    x :  
+    x : pd.DataFrame
     """
     
     index = np.arange(len(x.index)) + 1
