@@ -1,0 +1,9 @@
+pnl_sheets:
+  year_start:
+    2023:
+      id: 1w_3DjWmzqCv7eUbJkZKqDdcqoo2l_iYCIs9Dh7wxgkc
+      labour_sheet_name: Labour
+      sales_sheet_name: Income
+sales_sheet:
+  id: 1aT47KSxiLfMRh1hAGcqekSDbV3GdE5J_wDbHXyZh71A
+  sheet_name: Yearly by Week

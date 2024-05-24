@@ -1,0 +1,7 @@
+columns:
+    - ds
+    - y
+    - Sales
+    - Sales_lagged1
+    - Sales_lagged2
+    - Sales_lagged3

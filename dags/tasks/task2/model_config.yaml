@@ -1,0 +1,12 @@
+order:
+  - 3
+  - 1
+  - 0
+seasonal_order:
+  - 0
+  - 0
+  - 0
+  - 12
+with_intercept: False
+scaling: True
+poly_features: True
