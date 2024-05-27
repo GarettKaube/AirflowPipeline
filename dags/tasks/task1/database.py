@@ -9,7 +9,7 @@ from datetime import datetime
 import yaml
 
 
-with open("./dags/tasks/task1/pipeline_configs.yaml", "r") as f:
+with open("./dags/tasks/task1/pipeline_configs/bigquery.yaml", "r") as f:
     bq_config = yaml.safe_load(f)
     project = bq_config["project"]
     dataset_id = bq_config["dataset"]
