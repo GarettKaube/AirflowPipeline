@@ -110,7 +110,7 @@ def add_week_start_at_40(df:pd.DataFrame):
 
 def get_year(x):
     """
-    Generates year numbers 
+    Generates year numbers based on the week numbers
     """
     year = [f"{i}-{i+1}" for i in range(2015, dt.date.today().year+1)]
     
