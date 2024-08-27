@@ -13,6 +13,11 @@ import os
 import numpy as np
 import pandas as pd
 from googleapiclient.discovery import build  
+import gspread
+from oauth2client.service_account import ServiceAccountCredentials
+from datetime import datetime
+from airflow.providers.google.common.hooks.base_google import GoogleBaseHook
+from tasks.task1.database import get_modified_date
 
 
 def initialize_directories():
@@ -255,12 +260,6 @@ def check_for_sheet_updates(sheet_config_path, table_id) -> dict:
         dictionary that contains keys "pnl_sheets" and "sales_sheet" with
         lists as their values.
     """
-    from sklearn.linear_model import LogisticRegression
-    import gspread
-    from oauth2client.service_account import ServiceAccountCredentials
-    from datetime import datetime
-    from airflow.providers.google.common.hooks.base_google import GoogleBaseHook
-    from tasks.task1.database import get_modified_date
     hook = GoogleBaseHook("googlesheets")
     creds = hook.get_credentials()
     
